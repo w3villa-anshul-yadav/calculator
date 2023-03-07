@@ -43,7 +43,7 @@ for (let i = 0; i < numberInput.length; i++) {
     let num = numberInput[i].innerText;
     let screen = document.getElementById("screen");
     clickAnimation(numberInput[i]);
-     if (num == ".") {
+    if (num == ".") {
       if (ishavingpoint(screenElem.innerText)) {
       } else {
         updateScreenValue(num);
@@ -53,11 +53,10 @@ for (let i = 0; i < numberInput.length; i++) {
         setScreenValue(num);
       } else updateScreenValue(num);
     } else {
-      if(Number.isInteger(eval(screenElem.innerText))){
-
+      if (Number.isInteger(eval(screenElem.innerText))) {
         setScreenValue(eval(screenElem.innerText));
-      }else{
-        setScreenValue(eval(screenElem.innerText).toFixed(5))
+      } else {
+        setScreenValue(eval(screenElem.innerText).toFixed(5));
       }
     }
   });
