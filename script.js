@@ -53,7 +53,12 @@ for (let i = 0; i < numberInput.length; i++) {
         setScreenValue(num);
       } else updateScreenValue(num);
     } else {
-       setScreenValue(eval(screenElem.innerText).toFixed(6));
+      if(Number.isInteger(eval(screenElem.innerText))){
+
+        setScreenValue(eval(screenElem.innerText));
+      }else{
+        setScreenValue(eval(screenElem.innerText).toFixed(5))
+      }
     }
   });
 }
