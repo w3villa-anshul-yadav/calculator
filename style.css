@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    height: 6px;
+}
+::-webkit-scrollbar-track{
+    height: 5px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+     height: 4px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    
+}
+/* common class */
+.h-r-c-p-f{
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px;
+    font-size: 30px;
+    cursor:pointer ;
+
+}
+ .bg-control{
+    background-color: aquamarine !important;
+    color: black !important;
+
+ }
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.hero{
+    padding: 100px 10px;
+    position: relative;
+    top:6vh;
+    flex-direction: column;
+
+}
+.hero h1{
+    font-size: 62px;
+    color: darkslategray;
+}
+.calculator{
+    padding: 10px;
+    background-color: cadetblue;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.calculator code{
+    margin: 5px;
+    display: inline-block;
+    width: 98%;
+    text-align: right;
+    padding: 15px;
+    font-size: 3em;
+    height: 80px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: darkslategray;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 10px;
+}
+.control-button{
+    width: 100%;
+    justify-content: space-around;
+}
+.control-button strong{
+    width: 50%;
+    margin: 5px;
+    height: 60px;
+    text-align: center;
+    background-color: aquamarine;
+
+ }
+ .operator-container{
+    justify-content: space-between;
+ }
+ .operator-container strong{
+    width: 25%;
+    margin: 5px;
+    font-size: 35px;
+    background-color: rgb(85, 83, 83);
+    color: white;
+}
+.number{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.number strong{
+     margin: 5px;
+    background-color: black;
+    color: white;
+    width:30%;
+ }
+
+ .on-click-bg{
+    background-color: #b1aeae !important;
+ }
+ strong:hover{
+    transform: scale(1.02);
+    transition: 1s ease-out;
+    box-shadow: 0px 1px 0px 3px rgba(188, 188, 188, 0.508);
+ }
+ h4{
+    position: relative;
+    bottom: -9vh;
+ }
